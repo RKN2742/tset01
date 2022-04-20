@@ -1,0 +1,509 @@
+@charset "UTF-8";
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+}
+
+img, .btn > li {
+  cursor: pointer;
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.btn > li {
+  width: 15px;
+  height: 15px;
+  background-color: #aaa;
+  border-radius: 50%;
+  float: left;
+  margin: 5px;
+}
+.btn > li.on {
+  background-color: #333;
+}
+
+div#mainbanner header.menu_style {
+  background-color: #fff;
+}
+div#mainbanner header.menu_style div ul li {
+  color: #000;
+}
+
+div#mainbanner header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1000;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+div#mainbanner header .logo {
+  padding: 20px 130px;
+}
+div#mainbanner header ul {
+  height: 50px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+div#mainbanner header ul li {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.4em;
+}
+div#mainbanner > div {
+  position: relative;
+}
+div#mainbanner > div h1 {
+  position: absolute;
+  color: #fff;
+  bottom: 80px;
+  left: 60px;
+  z-index: 1;
+}
+div#mainbanner > div p {
+  position: absolute;
+  color: #fff;
+  bottom: 60px;
+  left: 60px;
+  z-index: 1;
+}
+div#mainbanner > div div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+div#mainbanner > div div ul li img {
+  cursor: default;
+}
+
+/*1섹션*/
+section.s1 h2 {
+  text-align: center;
+  color: #222;
+  font-size: 28px;
+  padding: 30px 0 20px;
+}
+section.s1 #pageview {
+  padding: 20px 0 100px;
+  width: 1120px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+section.s1 #pageview > p {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+section.s1 #pageview .page > li {
+  position: relative;
+  float: left;
+  width: 270px;
+  height: 270px;
+  margin: 5px 5px;
+  overflow: hidden;
+}
+section.s1 #pageview .page > li:hover div {
+  display: block;
+}
+section.s1 #pageview .page > li:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section.s1 #pageview .page > li > div {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+section.s1 #pageview .page > li > div p {
+  padding-top: 40%;
+  text-align: center;
+  color: #fff;
+}
+section.s1 #pageview .page > li img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+}
+section.s1 #pageview > ul.btn {
+  bottom: 70px;
+}
+
+/*1베너*/
+div.benner1 {
+  position: relative;
+  z-index: 2;
+}
+div.benner1 img {
+  width: 100%;
+}
+
+/*2섹션*/
+section.s2 {
+  background: url(../img/bg1.jpg) no-repeat;
+  background-size: cover;
+  padding: 70px;
+}
+section.s2 h2 {
+  text-align: left;
+  color: white;
+  font-size: 28px;
+  padding: 30px 0 20px;
+}
+section.s2 #sec2 {
+  position: relative;
+}
+section.s2 #sec2 .s2textbox {
+  position: absolute;
+  padding: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+}
+section.s2 #sec2 .s2textbox span {
+  font-weight: bold;
+  font-size: 15px;
+}
+section.s2 #sec2 .s2textbox.pick {
+  display: block;
+}
+section.s2 #sec2 div.b2Main {
+  float: left;
+  width: 515px;
+  height: 515px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-image: url(../img/b2m6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.s2 #sec2 div.b2sub {
+  float: left;
+  width: calc(1300px - 515px);
+}
+section.s2 #sec2 div.b2sub div {
+  float: left;
+  width: 255px;
+  height: 255px;
+  margin: 0 0 5px 5px;
+  position: relative;
+}
+section.s2 #sec2 div.b2sub div img {
+  width: 100%;
+}
+section.s2 #sec2 div.b2sub div div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  display: none;
+}
+section.s2 #sec2 div.b2sub div div p {
+  padding-top: 40%;
+  text-align: center;
+  color: #fff;
+}
+section.s2 #sec2 div.b2sub div.on div, section.s2 #sec2 div.b2sub div.pick div {
+  display: block;
+}
+
+/*원 베너*/
+div.banner2 {
+  background: #333;
+  padding: 0px 0 20px;
+}
+div.banner2 h2 {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  padding: 30px 0 20px;
+}
+div.banner2 .imgbb {
+  width: 1050px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+div.banner2 .imgbb div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin: 15px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div.banner2 .imgbb div img {
+  width: 100%;
+}
+div.banner2 .imgbb div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section.s3 {
+  background-image: url(../img/bg31.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.s3::after {
+  content: "";
+  background: #000;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+section.s3 h2 {
+  text-align: left;
+  color: #fff;
+  font-size: 28px;
+  padding: 30px 0 20px;
+  position: relative;
+  z-index: 2;
+}
+section.s3 div > .b3m {
+  position: absolute;
+  z-index: 9;
+}
+section.s3 div > .b3m div {
+  width: 290px;
+  height: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 7px;
+  position: relative;
+}
+section.s3 div > .b3m div img {
+  width: 100%;
+}
+section.s3 div > .b3m div p {
+  top: 0;
+  left: 0;
+  position: absolute;
+  line-height: 50px;
+  padding-left: 20px;
+  color: #fff;
+  z-index: 2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.s3 div > .b3m div:hover p {
+  padding-left: 36px;
+}
+section.s3 div > .b3m div.on::after {
+  opacity: 0.15;
+}
+section.s3 div > .b3m div::after {
+  content: "";
+  background: #000;
+  opacity: 0.65;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.s3 div > .b3m div.pick p {
+  padding-left: 40px;
+}
+section.s3 div > .b3m div.pick::after {
+  opacity: 0.05;
+}
+section.s3 div div.b3textbox {
+  position: relative;
+  padding-top: 170px;
+  z-index: 3;
+}
+section.s3 div div.b3textbox div {
+  display: none;
+}
+section.s3 div div.b3textbox div.pick {
+  display: block;
+}
+section.s3 div div.b3textbox h3 {
+  font-size: 33px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+section.s3 div div.b3textbox p {
+  text-align: center;
+  color: #fff;
+  padding: 17px;
+}
+section.s3 div div.b3textbox a {
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+section.s4 .top {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.s4 .top div {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+section.s4 .top div > div {
+  width: 100%;
+  position: absolute;
+  top: 30px;
+}
+section.s4 .top div > div h3 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+section.s4 .top div > div span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 38px;
+}
+section.s4 .top div > div p {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+section.s4 .top div img {
+  width: 100%;
+}
+section.s4 div.bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.s4 div.bot > div {
+  margin: 20px 0;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #eee;
+  width: 300px;
+}
+section.s4 div.bot > div img {
+  vertical-align: middle;
+  float: left;
+  width: 85px;
+}
+section.s4 div.bot > div:last-child {
+  padding: 0;
+  border: none;
+}
+section.s4 div.bot > div:last-child p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+section.s4 div.bot > div:last-child p span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section.s4 div.bot > div:last-child div {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+section.s4 div.bot .textBox {
+  float: left;
+  margin: 15px 0 0 10px;
+  width: 150px;
+}
+section.s4 div.bot .textBox strong {
+  font-size: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: #66554d;
+}
+footer div {
+  color: #fff;
+  padding-right: 5px;
+}
+footer div div {
+  float: left;
+  padding: 20px 50px;
+}
+footer div strong {
+  color: #fff;
+  padding: 5px;
+}
+footer div p {
+  color: #aaa;
+  display: inline-block;
+}
+footer div .top2 {
+  float: right;
+}
+footer div .top2 svg {
+  float: right;
+  height: 20px;
+  margin: 20px;
+  fill: #fff;
+  cursor: pointer;
+}
