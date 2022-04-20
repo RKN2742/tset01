@@ -1,0 +1,55 @@
+h1,h2,h3,h4,h5,h6,ul,dl,dt,dd,p,*{
+    margin: 0;
+    padding: 0;
+
+}
+li {
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration:none;
+}
+img {
+    vertical-align: top;
+    border: none;
+}
+address,i,em {
+    font-style: normal;
+}
+
+/* 글꼴 */
+body{
+    font-family: 'Noto Sans KR',"돋움",dotum,sans-serif;
+    font-size: 13px; color: #111;
+}
+.blind {
+    /* display:;*/
+    position: absolute;
+    top: -999px;
+}
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* .skipMenu */
+.skipMenu a{
+    background: black;
+    color: white;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    position: absolute;
+    width: 100%;
+    top: -400px;
+}
+.skipMenu a:focus{
+    top: 0;
+}
+
+
+
+
+/* 웹접근성 연구소 */
